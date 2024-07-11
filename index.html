@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="banner">
+        <img src="logo.jpg" class="logo">
+        <div class="banner-text">
+            <h1>Barber Shop</h1>
+            <p>Style Your Hair, Be Classy</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+             </div>
+        </div>
+
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+              
+
+            </ul>
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu">
+
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+</body>
+</html>
